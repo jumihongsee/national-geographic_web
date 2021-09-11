@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body,html{margin: 0;padding: 0;}
+h1,h2,h3,h4,h5,h6,p{margin: 0;}
+ul,ol{margin: 0;padding: 0;list-style: none;}
+a{text-decoration: none;}
+
+/********* header **********/
+header{width: 100%; height: 80px; background: #000;}
+header .wrap{
+    width: 1200px; padding: 0 10px; display: flex;
+    justify-content: space-between; align-items: center;
+    line-height: 80px; margin: 0 auto;
+}
+header .wrap .logo_sec{}
+header .wrap .logo_sec img{height: 40px; vertical-align: middle; }
+
+header .wrap nav{}
+header .wrap nav ul{display: flex;}
+header .wrap nav ul li{margin: 0 30px; text-transform: uppercase;}
+header .wrap nav ul li a{font-size: 14px; color: #fff;}
+header .wrap nav ul li:hover a{color: #ffdb00;}
+
+header .wrap .left_sec{}
+header .wrap .left_sec ul{display: flex;}
+header .wrap .left_sec ul li{margin: 0 20px;}
+header .wrap .left_sec ul li a{}
+header .wrap .left_sec ul li a img{height: 15px;}
+
+/********* main _js **********/
+main{width: 100%; }
+main .banner{width: 100%; position: relative; }
+
+
+
+main .banner .b_img{
+    
+    overflow: hidden; width: 100%; height: 540px; background: #faa; position: relative;
+
+}
+main .banner .b_img > ul{width: 400%; height: 100%; display: flex; flex-wrap: wrap;}
+main .banner .b_img > ul > li{
+    width: 25%; height: 100%;
+    background-size: cover; background-position: 50% 50%; 
+}
+main .banner .b_img  ul li.slide_01{background-image: url(../img/main_04.png);}
+main .banner .b_img  ul li.slide_02{background-image: url(../img/main_03.png);}
+main .banner .b_img  ul li.slide_03{background-image: url(../img/main_02.png);}
+main .banner .b_img  ul li.slide_04{background-image: url(../img/main_01.png);}
+
+main .banner .wrap{position: absolute; top: 50%; left: 20%;}
+
+main .banner .wrap .txt{display: flex;}
+main .banner .wrap h3{font-size: 36px; color: #fff; font-weight: normal; margin-left: 20px;}
+main .banner .wrap .logo{
+    background-image: url(../img/Rectangle\ 3.png);
+    height: 120px; background-size: cover; background-position: 50% 50%; width: 80px;
+}
+
+/*******  article = Lastest Stories *********/
+
+.Lastest_Stories{padding: 120px 0; background: #000; }
+.Lastest_Stories .wrap_box{width: 1200px; height: auto; padding-left: 10px; margin: 0 auto; background: #000;  }
+.Lastest_Stories .wrap_box > h3{font-size: 36px; font-weight: lighter; margin-bottom: 40px; line-height: 36px; color: #fff;}
+
+.Lastest_Stories .wrap_box .box_section{display: flex; height: 400px;}
+.Lastest_Stories .wrap_box .double_box{
+    width:calc(50% - 20px); height: 400px; margin-right: 10px;
+    background-image: url(../img/animals/animal_news_1.jpg); background-size: cover; background-position: 50% 50%;
+}
+.Lastest_Stories .wrap_box .double_box .txt_box{padding: 20px 18px; color: #fff; margin-top: 200px; }
+.Lastest_Stories .wrap_box .double_box .txt_box p{font-size: 16px; padding-bottom: 20px;font-weight: 300;}
+.Lastest_Stories .wrap_box .double_box .txt_box h3{font-size: 20px; padding-bottom: 26px; font-weight: 300;}
+.Lastest_Stories .wrap_box .double_box .txt_box a{font-size: 14px; color: #fff;font-weight: 300;}
+
+
+
+.Lastest_Stories .wrap_box .box{margin-left: 10px; width: calc(25% - 10px); background: #fff;}
+.Lastest_Stories .wrap_box .box:hover{background: #ffdb00; transition: background 0.5s;}
+.Lastest_Stories .wrap_box .box .img_box_js img{
+    width: 100%; height: 200px; 
+    background-size: cover; background-position: 50% 50%;
+}
+
+.Lastest_Stories .wrap_box .box .txt_box_js{height: 200px; color: #333; padding: 20px;}
+.Lastest_Stories .wrap_box .box .txt_box_js p{font-size: 14px; padding-bottom: 20px;}
+.Lastest_Stories .wrap_box .box .txt_box_js h3{font-size: 13px; padding-bottom: 40px; font-weight: 500;}
+.Lastest_Stories .wrap_box .box .txt_box_js a{font-size: 14px; color: #333;}
+
+
+/*******  article = Lastest Stories _bottom_box _ js *********/
+.Lastest_Stories .wrap_box .bottom_box{margin: 10px 0; display: flex; flex-wrap: wrap; border-bottom: 1px solid #555; padding-bottom: 120px; }
+.Lastest_Stories .wrap_box .bottom_box .b_box {width: calc(25% - 10px); margin-top: 10px; margin-bottom: 10px;  background: #fff; margin-right: 10px; margin-top: 10px; }
+.Lastest_Stories .wrap_box .bottom_box .b_box .img_box_js img{width: 100%;}
+
+.Lastest_Stories .wrap_box .bottom_box .b_box .txt_box_js{height: 200px; color: #333; padding: 20px;}
+.Lastest_Stories .wrap_box .bottom_box .b_box .txt_box_js p{font-size: 14px; padding-bottom: 20px;}
+.Lastest_Stories .wrap_box .bottom_box .b_box .txt_box_js h3{font-size: 13px; padding-bottom: 40px; font-weight: 500;}
+.Lastest_Stories .wrap_box .bottom_box .b_box .txt_box_js a{font-size: 14px; color: #333;}
+.Lastest_Stories .wrap_box .bottom_box .b_box:hover{background: #ffdb00; transition: background 0.5s;}
+
+
+/*******  Subscriber Exclusive Content_js *********/
+.Subscriber{background: #000;}
+.Subscriber .wrap{width: 1200px; padding: 0 10px; margin: 0 auto;}
+.Subscriber .wrap .txt h3{
+    font-size: 36px; font-weight: lighter; margin-bottom: 40px; line-height: 36px; color: #fff;
+}
+.Subscriber .wrap .cont{display: flex; padding-bottom: 140px;}
+.Subscriber .wrap .cont .box{
+    display: table; margin-right: 10px;
+    width: calc(25% - 10px); height: 340px; border: 2px solid #ffdb00;
+    background-size: cover; background-position: 50% 50%; /*background-image: url(../img/poster_1.jpg);*/
+}
+.Subscriber .wrap .cont .box .dark{
+    width: 100%; height: 100%; background: rgba(0,0,0,0.6);
+    display: table-cell; text-align: center; vertical-align: middle;
+}
+.Subscriber .wrap .cont .box .dark{display: none;}
+.Subscriber .wrap .cont .box:hover .dark{display: block; padding-top: 90px;}
+.Subscriber .wrap .cont .box .dark h4{margin-bottom: 20px; font-size: 14px; color: #fff; font-weight: 300; text-transform: uppercase;}
+.Subscriber .wrap .cont .box .dark .line{border: 2px solid #ffdb00; width: 24px; margin: 0 auto; margin-bottom: 20px;}
+.Subscriber .wrap .cont .box .dark h3{font-size: 16px; color: #fff; font-weight: 300; padding-bottom: 30px;}
+.Subscriber .wrap .cont .box .dark button{cursor: pointer; background: #ffdb00; width: 70px; height: 30px; border: none; border-radius: 2px;}
+
+.Subscriber .wrap .cont .box .dark button:hover{background: #f3aa0d; transition: background 0.5s;}
+
+/*******  article =  signup *********/
+.signUp{
+    background-size: cover; background-position: 50% 50%;
+    background-image: url(../img/banner_bg.jpg); height: 240px; 
+    background-attachment: fixed;
+    
+}
+.signUp .wrap{width: 1200px; padding: 0 10px; margin: 0 auto; padding: 60px 200px; text-align: center;}
+.signUp .wrap h3{font-size: 24px; font-weight: 400; color: #fff; line-height: 40px; padding-bottom: 15px;}
+.signUp .wrap p{font-size: 16px; font-weight: 300; color: #fff; padding-bottom: 15px;}
+.signUp .wrap button{
+    width: 180px; height: 35px; background: #ffdb00; border: none; border-radius: 3px;
+    text-transform: uppercase; cursor: pointer;
+}
+.signUp .wrap button:hover{background: #f3aa0d; }
+
+/*******  footer *********/
+footer{ height: 110px; background: #000;}
+footer .wrap{width: 1200px; margin: 0 auto; }
+footer .wrap .top{display: flex; justify-content: space-between; line-height: 110px;}
+
+footer .wrap .top > nav{}
+footer .wrap .top > nav > ul{display: flex;}
+footer .wrap .top > nav > ul > li{margin: 0 20px;}
+footer .wrap .top > nav > ul > li > a{font-size: 14px; color: #fff;}
+footer .wrap .top > nav > ul > li:hover > a{color: #ffdb00;}
+
+footer .wrap .top .sns{}
+footer .wrap .top .sns ul{display: flex;}
+footer .wrap .top .sns ul li{margin: 0 5px;}
+footer .wrap .top .sns ul li a{}
+footer .wrap .top .sns ul li a img{height: 15px;}
+
+footer .copy{background: #000; text-align: center; color: #414141;}
